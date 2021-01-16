@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is Color - Guessing Game</title>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>The great<span id="color">Loading...</span>Guessing Game</h1>
+  </header>
+
+  <article id="controls">
+    <div class="container">
+      <button id="random-new-colors"></button>
+
+      <p id="message-feedback"></p>
+
+      <div class="difficult">
+        <button value="2">Easy</button>
+        <button value="5" class="active">Hard</button>
+      </div>
+    </div>
+  </article>
+
+  <main>
+    <article id="colors">
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #363636;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* buttons */
+button {
+  cursor: pointer;
+}
+
+
+/* Messages */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.5rem;
+  letter-spacing: 2px;
+  color: white;
+  background-color: rgb(20, 94, 182);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 span {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: .5rem;
+}
+
+
+
+/* Controls */
+#controls {
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#controls .container {
+  width: 38rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  color: black;
+}
+
+#controls p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+#controls button {
+  border: none;
+  background-color: unset;
+
+  padding: 0;
+
+  font: 400 1.3rem 'Poppins';
+  
+  transition: background-color .5s, color .5s;
+}
+
+#controls button:hover,
+#controls button.active {
+  background-color: RGB(20, 94, 182);
+  color: white;
+}
+
+
+/* Button Colors */
+#colors {
+  padding: 1.5rem;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 12rem);
+  gap: 1rem;
+  justify-content: center;
+}
+
+#colors button {
+  height: 12rem;
+  width: 12rem;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  border-radius: 1.5rem;
+  
+  transition: opacity .25s;
+}
+
+/* telas pequenas */
+@media (max-width: 768px) {html {font-size: 90%;}}
+@media (max-width: 600px) {html {font-size: 60%;}}
+@media (max-width: 450px) {html {font-size: 55%;}}
+@media (max-width: 375px) {html {font-size: 40%;}}
+/* telas grandes */
+@media (min-width: 1440px) {html {font-size: 140%;}}
+@media (min-width: 2000px) {html {font-size: 165%;}}
