@@ -56,12 +56,14 @@ function startGame() {
   buttonsEl.forEach(button => {
     button.addEventListener('click', () => {
       if (button.value == squareSelected) {
-        buttonsEl.forEach(button => {
-          button.style.pointerEvents = "none";
-          button.style.backgroundColor = colorSelected;
-          button.style.visibility = 'visible';
-          button.style.opacity = 1;
-        });
+        setTimeout(() => {
+          buttonsEl.forEach(button => {
+            button.style.pointerEvents = "none";
+            button.style.backgroundColor = colorSelected;
+            button.style.visibility = 'visible';
+            button.style.opacity = 1;
+          });
+        }, 201);
 
         playButtonEl.innerText = "Play Again";
         return feedbackMessageEl.innerHTML = "Yeah! You win.";
@@ -73,7 +75,7 @@ function startGame() {
         button.style.opacity = 0;
         setTimeout(() => {
           button.style.visibility = "hidden";
-        }, 250);
+        }, 200);
 
         return feedbackMessageEl.innerHTML = "Try Again!";
       }

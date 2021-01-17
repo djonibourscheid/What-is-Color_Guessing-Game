@@ -4,6 +4,10 @@
   outline: none;
 }
 
+::selection {
+  background: none;
+}
+
 body {
   background-color: #363636;
   margin: 0;
@@ -109,14 +113,14 @@ header h1 span {
   border: none;
   border-radius: 1.5rem;
   
-  transition: opacity .25s;
+  transition: opacity .2s;
 }
 
 /* telas pequenas */
 @media (max-width: 768px) {html {font-size: 90%;}}
 @media (max-width: 600px) {html {font-size: 60%;}}
 @media (max-width: 450px) {html {font-size: 55%;}}
-@media (max-width: 375px) {html {font-size: 40%;}}
+@media (max-width: 375px) {html {font-size: 43%;}}
 /* telas grandes */
-@media (min-width: 1440px) {html {font-size: 140%;}}
+@media (min-width: 1440px) {html {font-size: 115%;}}
 @media (min-width: 2000px) {html {font-size: 165%;}}
