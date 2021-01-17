@@ -113,7 +113,7 @@ header h1 span {
   border: none;
   border-radius: 1.5rem;
   
-  transition: opacity .2s;
+  transition: opacity .15s;
 }
 
 /* telas pequenas */
