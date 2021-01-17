@@ -63,7 +63,7 @@ function startGame() {
             button.style.visibility = 'visible';
             button.style.opacity = 1;
           });
-        }, 201);
+        }, 160);
 
         playButtonEl.innerText = "Play Again";
         return feedbackMessageEl.innerHTML = "Yeah! You win.";
@@ -75,7 +75,7 @@ function startGame() {
         button.style.opacity = 0;
         setTimeout(() => {
           button.style.visibility = "hidden";
-        }, 200);
+        }, 150);
 
         return feedbackMessageEl.innerHTML = "Try Again!";
       }
